@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHATROOM - Signup</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: linear-gradient(135deg, #81a4fd 0%, #cae8ff 100%);
+        }
+
+        /* Container Styling */
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        /* Heading Styling */
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #ff0000;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            text-align: left;
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Button Styling */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WELCOME TO CHAT APP</h1>
+        <h2>SIGNUP</h2>
+        <h3>{{message}}</h3>
+        <form method="post" action="/signup">
+            <label>USERNAME:</label>
+            <input type="text" name="username" required>
+            <br>
+            <label>EMAIL:</label>
+            <input type="email" name="email" required>
+            <br>
+            <label>ENTER PASSWORD</label>
+            <input type="password" name="password" required>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
